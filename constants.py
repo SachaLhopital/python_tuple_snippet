@@ -1,0 +1,17 @@
+class Constants(object):
+
+    DIMENSION = [0, 5, 241]
+    DIMENSION_SIZE = len(DIMENSION)
+
+    MIN_TAU_VALUE = 5
+    MAX_NB_DEVICES = 6
+    NB_ZONES = 4
+    NB_ROOMS = 8
+    INFINITY_IDX = 16
+    URGT_TIME = 30
+    T_SYNCHRO = 30
+    THIRTY_SECONDS = 30
+    TWO_MINUTS = 120
+    THREE_HOURS = 180
+    TIMEOUT = 60  # 1 min
+    INFINITY = 241

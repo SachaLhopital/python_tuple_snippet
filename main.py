@@ -18,10 +18,7 @@ if __name__ == "__main__":
     c = Room(3)
     d = Room(4)
 
-    a.cons = ConstraintManager(a)
-    b.cons = ConstraintManager(b)
-    c.cons = ConstraintManager(c)
-    d.cons = ConstraintManager(d)
+    cons = ConstraintManager()
 
     z1.rooms = [a, b]
     z2.rooms = [c, d]
@@ -35,7 +32,7 @@ if __name__ == "__main__":
         r_list = []
 
         for t in temp:
-            r_list.append(t + tuple([r.cons.get_cost_of_private_constraints_for_value(t[1])]))
+            r_list.append(t + tuple([cons.get_cost_of_private_constraints_for_value(r, t[1])]))
 
         all_list.append(r_list)
 
@@ -52,7 +49,7 @@ if __name__ == "__main__":
         r_list = []
 
         for t in temp:
-            r_list.append(t + tuple([r.cons.get_cost_of_private_constraints_for_value(t[1])]))
+            r_list.append(t + tuple([cons.get_cost_of_private_constraints_for_value(r, t[1])]))
 
         all_list.append(r_list)
 
