@@ -59,8 +59,7 @@ if __name__ == "__main__":
 
     print(temp2)
 
-    size_1 = pow(Constants.DIMENSION_SIZE, len(z1.rooms))
-    size_2 = pow(Constants.DIMENSION_SIZE, len(z2.rooms))
+    # --- Combine
 
     R = list(itertools.product(temp1, temp2))
     print(R)
